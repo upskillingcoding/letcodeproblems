@@ -29,11 +29,11 @@ print_r($res);
 
 
 //*********************************************************************************************
-
+/*
 Example 2:
 Input: num1 = [3,2,4], target1 = 6
 Output: [1,2]
-
+*/
 function addTwo($num1, $target1){
 $counts = count($num1);
 
