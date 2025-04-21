@@ -19,7 +19,7 @@ $count = count($nums);
       }
     }
   }
-  retunr [];
+  return [];
 }
 
 $nums = [2,7,11,15];
@@ -27,6 +27,30 @@ $target = 9;
 $res = twoSum($nums, $target);
 print_r($res);
 
+
+//*********************************************************************************************
+
+Example 2:
+Input: num1 = [3,2,4], target1 = 6
+Output: [1,2]
+
+function addTwo($num1, $target1){
+$counts = count($num1);
+
+for($i=0; $i<$counts; $i++){
+  for($j=$i+1; $j<$counts; $j++){
+    if($num1[$i] + $num1[$j] == $target1){
+    return [$i, $j];
+    }
+  }
+}
+return [];
+}
+
+$num1=[3,2,4];
+$target1=6;
+$result = addTwo($num1, $target1);
+print_r($result);
 
 
 ?>
